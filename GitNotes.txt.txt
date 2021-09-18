@@ -1,0 +1,152 @@
+Firoj Khan Notes
+
+GIT Architecture:
+
+GIT Bash Command:
+-----------------------------------------------
+We are having several git command to perform operations with Git repository.
+
+Note: We have created Git Repository in github.com
+
+GIT Repo URL: git remote add origin https://github.com/firoj786/GIT-Hub-Notes.git
+
+GIT Bash Command:
+---------------------
+git help--->It provides frequently used several gir commands.
+
+git help <cmd-name>--> It opens documentation of that particular command.
+
+git init ----------->It is used to create empty repository or re-initialize exsting repo.
+
+git status----->This command will dispalay status of current repository.
+
+Staged Files.
+----------------------
+Files which are added and they are to commit.
+These file names be displayed in green color.
+
+Un-Staged File.
+--------------------
+Modified files will be displayed here, we need to stage these files to commit.
+These file names will be displayed in red color.
+
+Un-Tracked File
+----------------------
+Newly created files, we need to stage them to commit.
+These file names also will be displayd in red color.
+
+git add:- This command is used to add files to staiging area.
+
+          Syntax: git add <file-name>
+          Syntax: git --add =============>To all file at a time.
+
+git rm :This command is used to un-stage newly created files.
+
+                  Syntax: git rm --cached <file-name>
+                  Syntax: git rm --cached *
+
+git commit: This command is used to commit our changes to git local repository.
+
+                    Syntax: git commit -m 'commit-msg'
+
+Note: When we execute commit command it will consider all the files which are in staging area.
+
+Note: Git local repository will be available in our machine only.
+
+--------To commit our files to remote repository we should execute below commands-------------
+
+1) git remote add <repo-url> (this required only first time).
+
+2) push -u origen mster (this is used to move changes from local to central).
+
+--------------------------------------------------
+git reset : It is used to unstage a file.
+
+git checkout : It is used to discard changes done in a file.
+
+                   Syntax : git checkout -- <file-name>
+           
+           Syntax : git reset HEAD <file-name>  
+           
+ 
+COMMAND Practice.
+-------------------------
+git help
+git help <command-name>
+git init
+git add
+git add --a
+git commit -m <msg>
+git push
+git reset HEAD <filename>
+git checkout <file-name>
+git status
+
+GIT Repo URL: git remote add origin https://github.com/firoj786/GIT-Hub-Notes.git
+           
+When we make changes to files we need to stage them to commit.
+
+-->To add files(s) to staging area we will use add command.
+
+-->To commit files(s) to local repo we will use xommit use command.
+
+Note: We should provide reason for commit as a message.
+
+-->To publish local commits to central repository we will use push command.
+
+-->Whenever we commit, git will generate commit-id
+
+-->commit ID contains 40 alphanumrics characters
+
+-->From 40 alphanumbric characters it will display first 7 characters to us.
+
+-->To check commit history we will use git log command.
+               Syntax : git log
+
+-->In commit logs it will disolay below details.
+               
+               a) commit-id
+               b) author
+               c)timestamp
+               d)commit msg
+               
+-->To take existing project from repository to local system we will use git clone command.
+                     Syntax: git clone <repo-url>
+
+-->Before making any change to file(s) in local, it is highly recommended to take lastest changes from repository.
+   To take latest changes from repository we wll use it pull command.
+   
+                     Syntax : git pull
+       
+       Steps:-              
+----------------------------------------------------------------------------------------
+--> Create Repository in GIT Hub account(Repo URL will be  generated).
+
+--> Create Spring Boot Application in STS IDE.
+
+--> Go to workspace folder where project is Created.
+
+--> In side Project folder open git.
+
+--> Execute git init command.
+
+--> Execute git add --a command.
+
+--> Execute commit command(git commit -m 'msg').
+
+--> Execute remote add command(git rfemote add <repo=url>.
+
+--> Execute push command (git push -u origin master)
+
+GIT Stash
+----------------------------------
+It is used to record current changes and make working tree clean.
+
+
+Scenario
+---------------
+Your Ticket assigned a task (LOGIN page) to you morning @8 AM and you started working on that task.
+Few changes aleready you made in few files but you didn't commited because task is not yet completed.
+
+Around 12:15 PM your Ticket told park LOGIN page for now and start working on zonepload page it is
+ more priority today please complete it by today EOD. After zonepload pge is completed then start working with LOGIN page.
