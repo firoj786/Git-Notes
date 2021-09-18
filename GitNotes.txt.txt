@@ -150,3 +150,80 @@ Few changes aleready you made in few files but you didn't commited because task 
 
 Around 12:15 PM your Ticket told park LOGIN page for now and start working on zonepload page it is
  more priority today please complete it by today EOD. After zonepload pge is completed then start working with LOGIN page.
+
+-------------------------------------------------------
+What is branch in GIT HUB?
+When we created GIT Repository by default it will provide master branch,
+
+-->Branches are nothing but code bases.
+
+-->We can create several branches in git repository.
+
+-->Generally in git repository we will create branches like below.
+                                        --master (default)
+                                        --develop
+                                        --feature
+                                        --QA
+                                        --UAT
+                                        --RELEASE
+
+Workflow
+-----------------------------
+ -->Login into Git Repository
+
+-->Create Develop branch from master branch
+
+-->Clone develop branch code
+
+Note: If we execute git clone <repo-url> it clones master branch code by default.
+
+-->If we want to clone specific branch code then we should execute below command,
+              
+                    git clone -b <branch-name> <repo-url>
+
+-----------------------------------------------------
+Merging Branches usin Pull Request.
+
+-->When we create Git repository in Git hub we will getmaster branch by dfault.
+
+-->To support parallel development we need to have branches in git repository.
+
+-->Generally in realtime we will  create several branches like below.
+
+                                        --master (default)
+                                        --develop
+                                        --feature
+                                        --QA
+                                        --UAT
+                                        --RELEASE
+
+--> In GIT  hub account we can create branches in repository.
+
+--> Clone branch from repository.
+
+--> Make changes and push your changes to branch which you created for your feature.
+
+--> Once your developement & Unit testing is complete then merge your changes to main branch.
+
+--> To merge changes from one branch to another branch we will create 'Pull Request'
+
+--> When we execute pull request, GIT Hub compare source branch and target branch and it will confirm can be merge these branches or not.
+
+-->If status is'Able to merge' then execute pull request and merge changes.
+
+-->After pull request execution got complete, we can delete that new branch which  we creted for our story.
+
+
+Real-Time Scenario
+-------------------------------------
+ Two developers are working on Sprint 5.9.0
+
+Firoj & sony are developers.
+
+--> sony working on SP-3027 story.
+
+--> Firoj working on GLC-59 story.
+
+Note: Latest code is available in develop branch.
+
+
